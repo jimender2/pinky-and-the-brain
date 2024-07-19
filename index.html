@@ -5,9 +5,27 @@
       body {
         background-color: black;
       }
+      .container {
+        position: relative;
+        text-align: center;
+      }
+      .centered {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
-  <canvas id="matrix"></canvas>
+  <body class="container">
+    <div class="centered">
+      <h1>Pinky and the Brain</h1>
+      <h2>AI Wizards</h2>
+    </div>
+    <canvas id="matrix"></canvas>
+  </body>
+
   <script>
     const canvas = document.getElementById("matrix");
 
